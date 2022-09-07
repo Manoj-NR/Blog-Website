@@ -1,0 +1,14 @@
+
+<%- include('partials/header'); -%>
+    <h1>Home</h1>
+    <p><%=startCont%></p>
+
+    <%  arrInfo.forEach(function(compi){ %>
+    <h1><%=compi.title%></h1>
+      <p>
+      <%=compi.discp.substring(0, 100)+" ..."%>
+      <a href="/posts/<%=compi.title%>">Read More</a>
+      </p>
+    <%   });  %>
+
+<%- include('partials/footer'); -%>
